@@ -1,5 +1,17 @@
 import fs from "node:fs";
 
-const data = "Hello, my name is Tuan Linh";
+const stream = fs.createWriteStream("./tuanlinh.txt", { flags: "a" });
 
-fs.writeFile("./tuanlinh.txt", data, { flag: "a" }, () => {});
+let global = 0;
+
+for (let i = 0; i < 10000; i++) {
+  stream.write("HelloMyNameIsTuanLinh", () => {
+    global++;
+    console.log(global);
+    if (global == 9999) {
+      setTimeout(() => {
+        stream.end();
+      }, 1000);
+    }
+  });
+}

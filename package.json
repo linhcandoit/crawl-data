@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node crawl.ts",
     "test": "ts-node test.ts",
-    "check": "ts-node checkFile.ts",
+    "check": "ts-node check.ts",
     "top100": "ts-node top100coin.ts",
     "main" : "ts-node main.ts"
   },

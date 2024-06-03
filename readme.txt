@@ -21,3 +21,6 @@
                         => tam dung chuong trinh de handle queue
                         => hayyyy!!!
 */
+
+sometime, I want to go deeper in some kind of terminology, but I don't know how to do that
+I think I need to keep calm, the time will answer, just build the strong basic knowledge
